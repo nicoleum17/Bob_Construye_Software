@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lab 1</title>
+    <style>
+      body {
+        background-color: rgb(147, 180, 227);
+        text-align: justify;
+        font-size: 20px;
+        margin: 50px auto;
+        max-width: 1200px;
+        padding: 20px;
+      }
+      header, footer {
+          background-color: #c0c3e3;
+          padding: 20px;
+          text-align: center;
+          border-radius: 10px;
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      nav {
+        margin-top: 10px;
+      }
+      nav button {
+        background-color: #2a3d66;
+        color: white;
+        padding: 10px 15px;
+        margin: 10px;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      h1, h2, h3, h4 {
+          color: #2a3d66;
+      }
+      section {
+          background-color: #ffffff;
+          padding: 20px;
+          margin: 70px 0;
+          border-radius: 10px;
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      li {
+          margin-bottom: 10px;
+      }
+      ol, ul {
+          padding-left: 20px;
+      }
+      img {
+          display: block;
+          max-width: 100%;
+          height: auto;
+          margin: 10px auto;
+          border-radius: 5px;
+      }
+      footer p {
+          margin: 0;
+          font-size: 16px;
+          color: #2a3d66;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Laboratorio 1</h1>
+      <h2>
+        Introducción a las aplicaciones web, HTML5 y ciclo de vida de los
+        sistemas de información
+      </h2>
+
+      <nav>
+        <button onclick="location.href='#Contacto'">Contacto</button>
+        <button onclick="location.href='#Acerca'">Acerca de mí</button>
+        <button onclick="location.href='#Proyectos'">Proyectos</button>
+        <button onclick="location.href='#Preguntas'">Preguntas</button>
+        <button onclick="location.href='#Referencias'">Referencias</button>
+
+      </nav>
+    </header>
+
+    <section id="Contacto">
+      <h3>Información de Contacto.</h3>
+
+      <h4>Nombre:</h4>
+      <p>Joanna Nicole Uriostegui Magaña</p>
+
+      <h4>Correo electrónico:</h4>
+      <p>a01711853@tec.mx</p>
+
+      <h4>Telefono:</h4>
+      <p>445 107 0745</p>
+
+      <h4>Matrícula:</h4>
+      <p>A01711853</p>
+    </section>
+
+    <section id="Acerca">
+      <h3>Acerca de mi</h3>
+      <p>
+        Soy una estudiante de la carrera de Ingeniería en tecnologías
+        computacionales, interesada en el desarrollo de software. Me gusta
+        aprender y mejorar la calidad de mis proyectos.
+        Nacída en Moroleón, Guanajuato. Me encanta bailar ballet, tap y
+        contemporáneo, así como escuchar música y jugar videojuegos o 
+        ver streams y series. 
+        Me interesa mucho conocer como aplicar la práctica vista en clases
+        en mi vida laboral y personal. Me llama mucho la atención las 
+        aplicaciones y a donde puede llegar la tecnología con algo de 
+        creatividad, disciplina y organización.
+      </p>
+    </section>
+
+    <section id="Proyectos">
+      <h3>Proyectos</h3>
+      <ul>
+        <li>
+          <h3>SmartSnack.</h3>
+          <p>
+            Dispensador de comida automática para peces 
+            que monitorea la calidad del agua mediante
+            los sensores de temperatura y tubidez. 
+            Programando los sensores y un servomotor 
+            encargado de dispensar la comida con un ESP32.
+            Recolectando los datos en una base de datos 
+            MySQL visualizados en una página web desarrollada
+            con JavaScript, HTML y CSS. Integrando tecnologías
+            como Node.js (Express), Postman, GitHub, Render 
+            y Railway para su implementación y despliegue 
+            en la nube. <br>
+            <a href="https://github.com/YaelChar417/front-back-_end_iot_2024/tree/main">Repositorio</a>
+          </p>
+        </li>
+        
+        <li>
+          <h3>Tienda de Videojuegos</h3>
+          <p>
+            El proyecto consiste en el modelado de una 
+            tienda de videojuegos, la cual tiene varios 
+            tipos de productos, desde juegos, consolas 
+            y accesorios en el inventario, en el que se 
+            agregarán o eliminarán los productos para 
+            poder ofrecerlos en la tienda. Los usuarios 
+            pueden comprar con base en el inventario, 
+            pueden agregar o eliminar productos a la 
+            clase carrito, así como obtener el costo de 
+            sus productos y checar si hay descuentos 
+            disposibles todo mediante programación 
+            orientada a objetos. <br>
+            <a href="https://github.com/nicoleum17/TC1030_FJ24">Repositorio</a>
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="Preguntas">
+      <h3>Preguntas.</h3>
+
+      <li>
+        ¿Cuál es la diferencia entre Internet y la World Wide Web?
+        <p>
+          El Internet son todas las computadoras y la conexión que tienen, 
+          mientras que la WWW es la red de información que se puede acceder
+          a través de Internet (Redacción, 2019).</p>
+        </p>
+      </li>
+      <br>
+      <li>
+        ¿Cuáles son las partes de un URL?
+        <img src="url.png" width="1000px">
+        <p style="text-align: center;">(Collado, 2025)</p>
+        <ol type="1">
+          <li>Protocolo.</li>
+          <li>Subdominio.</li>
+          <li>Dominio.</li>
+          <li>TLD.</li>
+          <li>Carpeta o subcarpeta.</li>
+          <li>Página.</li>
+          <li>Etiqueta.</li>
+        </ol>
+      </li>
+      <br>
+      <li>
+        ¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH,
+        DELETE?
+        <ol>
+          <li>GET: Es utilizado para obtener información de un recurso.</li>
+          <li>HEAD: Es utilizado para obtener información de un recurso sin
+              obtener el cuerpo del recurso.</li>
+          <li>POST: Es utilizado para enviar un nuevo recurso, causando un 
+              cambio de estado.</li>
+          <li>PUT: Es utilizado para actualizar un recurso existente.</li>
+          <li>PATCH: Es utilizado para actualizar un recurso existente de manera
+              parcial.</li>
+          <li>DELETE: Es utilizado para eliminar un recurso existente.</li>
+        </ol> 
+      </li>
+      <br>
+      <li>
+        ¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por
+        ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por
+        qué?
+        <p>
+          Se usa POST debido a que son datos sensibles entonces se colocan
+          en el cuerpo y mediante POST no se envían en la red.
+        </p>
+      </li>
+      <br>
+      <li>
+        ¿Qué método HTTP se utiliza cuando a través de un navegador web se
+        accede a una página a través de un URL?
+        <p>
+          Se utiliza GET ya que se está solicitando información de un recurso.
+        </p>
+      </li>      
+      <br>
+      <li>
+        Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué
+        significa esto? ¿Ocurrió algún error?
+        <p>
+          El código 200 significa que la solicitud se ha realizado correctamente.
+        </p>
+      </li>
+      <br>
+      <li>
+        ¿Es responsabilidad del desarrollador corregir un sitio web si un
+        usuario reporta que intentó acceder al sitio y se encontró con un error
+        404? ¿Por qué?
+        <p>
+          No, ya que el desarrollador no controla que URL fue ingresada por el 
+          usuario entonces no es su responsabilidad.
+        </p>
+      </li>
+      <br>
+      <li>
+        ¿Es responsabilidad del desarrollador corregir un sitio web si un
+        usuario reporta que intentó acceder al sitio y se encontró con un error
+        500? ¿Por qué?
+        <p>
+          Sí, porque el desarrollador controla el código de la página web.
+        </p>
+      </li>
+      <br>
+      <li>
+        ¿Qué significa que un atributo HTML5 esté depreciado o desaprobado
+        (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén
+        desaprobados.
+        <p>
+          Significa que el atributo ya no se utiliza pero hay varios que con 
+          los que los puedes sustituir. Algunos elementos de HTML 4 que en HTML5
+          estén desaprobados son: applet, acronym, bgsound, dir, hgroup, isindex,
+          basefont, big, center, font, menu, etc (Estas Son Las Etiquetas 
+          Obsoletas En HTML5: ¡Actualízate! | Tokio, 2022).
+        </p>
+      </li>
+      <br>
+      <li>
+        ¿Cuáles son las diferencias principales entre HTML 4 y HTML5?
+        <p>
+          Soporte para video, audio, canvas, svg geolocalización, 
+          web storage
+        </p>
+      </li>
+      <br>
+      <li>
+        ¿Qué componentes de estructura y estilo tiene una tabla?
+        <p>
+          Una tabla registros (filas) y campos (columnas).
+        </p>
+      </li>
+      <br>
+      <li>
+        ¿Cuáles son los principales controles de una forma HTML5?
+        <p>
+          Los principales controles en HTML5 son: input, select, 
+          textarea, button, checkbox, radio, file, password, submit, 
+          reset, etc. (Controles De Formulario Originales - Aprende 
+          Desarrollo Web | MDN, n.d.)
+        </p>
+      </li>
+      <br>
+      <li>
+        ¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes
+        utilizar la siguiente página para descubrirlo: http://html5test.com/ (Al
+        responder la pregunta recuerda poner el navegador que utilizas)
+        <p>
+          El navegador que utilizo es Google Chrome y tiene un 99% de soporte a 
+          HTML 5.
+        </p>
+      </li>
+
+      <h4>
+        Sobre el ciclo de vida y desarrollo de los sistemas de información:
+      </h4>
+      <li>
+        ¿Cuál es el ciclo de vida de los sistemas de información? ¿Cuál es el
+        ciclo de desarrollo de sistemas de información?
+        <p>
+          El ciclo de vida de los sistemas de información es el conjunto de fases
+          que un sistema de información atraviesa desde su concepción hasta su
+          desmantelamiento. 
+        </p>
+        <img src="ciclo-de-vida-de-un-sistema-de-informacion-2.jpg" width="650px">
+        <p style="text-align: center;">(Guerrero, 2015)</p>
+        <p>
+          El ciclo de desarrollo de sistemas de información es el conjunto de fases 
+          que un sistema de información atraviesa desde su concepción hasta su 
+          desmantelamiento.
+        </p>
+      </li>
+    </section>
+
+    <section id="Referencias">
+      <h3>Referencias.</h3>
+      <li>
+        <a href="https://www.bbc.com/mundo/noticias-47538812"> Redacción. (2019, March 
+          12). ¿Cuál es la diferencia entre internet y la web? (y por qué muchos las 
+          confunden). BBC News Mundo.</a> 
+      </li>
+      <li><a href="https://www.adaptixnetworks.com/que-es-una-direccion-web-o-url/"> 
+         Collado, V. (2025, January 29). ¿Qué es una dirección web o url? | Adaptix
+         Networks. Adaptix Networks | Servicios En La Nube.</a> 
+      </li>
+      <li>
+        <a href="https://www.tokioschool.com/noticias/etiquetas-obsoletas-html5/"> 
+          Estas son las etiquetas obsoletas en HTML5: ¡Actualízate! | Tokio. (2022). 
+          Tokio School. </a>
+      </li>
+      <li>
+        <a href="https://developer.mozilla.org/es/docs/Learn_web_development/Extensions/Forms/Basic_native_form_controls">
+          Controles de formulario originales - Aprende desarrollo web | MDN. (n.d.). 
+          MDN Web Docs.</a>
+      </li>
+      <li>
+        <a href="https://www.gestiopolis.com/ciclo-de-vida-de-un-sistema-de-informacion/">
+          Guerrero, A. C. (2015, July 20). Ciclo de vida de un sistema de información • 
+          gestiopolis. Gestiopolis. </a>
+      </li>
+    </section>
+
+    <footer>
+      <a href="http://code.visualstudio.com/">Visual Studio Code</a>
+      <p>Nicole 2025</p>
+    </footer>
+  </body>
+</html>
