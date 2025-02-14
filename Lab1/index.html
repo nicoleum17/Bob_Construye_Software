@@ -3,62 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Lab 1</title>
-    <style>
-      body {
-        background-color: rgb(147, 180, 227);
-        text-align: justify;
-        font-size: 20px;
-        margin: 50px auto;
-        max-width: 1200px;
-        padding: 20px;
-      }
-      header, footer {
-          background-color: #c0c3e3;
-          padding: 20px;
-          text-align: center;
-          border-radius: 10px;
-          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-      }
-      nav {
-        margin-top: 10px;
-      }
-      nav button {
-        background-color: #2a3d66;
-        color: white;
-        padding: 10px 15px;
-        margin: 10px;
-        border-radius: 5px;
-        font-size: 16px;
-      }
-      h1, h2, h3, h4 {
-          color: #2a3d66;
-      }
-      section {
-          background-color: #ffffff;
-          padding: 20px;
-          margin: 70px 0;
-          border-radius: 10px;
-          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-      }
-      li {
-          margin-bottom: 10px;
-      }
-      ol, ul {
-          padding-left: 20px;
-      }
-      img {
-          display: block;
-          max-width: 100%;
-          height: auto;
-          margin: 10px auto;
-          border-radius: 5px;
-      }
-      footer p {
-          margin: 0;
-          font-size: 16px;
-          color: #2a3d66;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
@@ -155,154 +100,195 @@
 
     <section id="Preguntas">
       <h3>Preguntas.</h3>
+      <article id="Lab1">
+        <h4>Lab 1</h4>
+        
+        <li>
+          ¿Cuál es la diferencia entre Internet y la World Wide Web?
+          <p>
+            El Internet son todas las computadoras y la conexión que tienen, 
+            mientras que la WWW es la red de información que se puede acceder
+            a través de Internet (Redacción, 2019).</p>
+          </p>
+        </li>
+        <br>
+        <li>
+          ¿Cuáles son las partes de un URL?
+          <img src="url.png" width="1000px">
+          <p style="text-align: center;">(Collado, 2025)</p>
+          <ol type="1">
+            <li>Protocolo.</li>
+            <li>Subdominio.</li>
+            <li>Dominio.</li>
+            <li>TLD.</li>
+            <li>Carpeta o subcarpeta.</li>
+            <li>Página.</li>
+            <li>Etiqueta.</li>
+          </ol>
+        </li>
+        <br>
+        <li>
+          ¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH,
+          DELETE?
+          <ol>
+            <li>GET: Es utilizado para obtener información de un recurso.</li>
+            <li>HEAD: Es utilizado para obtener información de un recurso sin
+                obtener el cuerpo del recurso.</li>
+            <li>POST: Es utilizado para enviar un nuevo recurso, causando un 
+                cambio de estado.</li>
+            <li>PUT: Es utilizado para actualizar un recurso existente.</li>
+            <li>PATCH: Es utilizado para actualizar un recurso existente de manera
+                parcial.</li>
+            <li>DELETE: Es utilizado para eliminar un recurso existente.</li>
+          </ol> 
+        </li>
+        <br>
+        <li>
+          ¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por
+          ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por
+          qué?
+          <p>
+            Se usa POST debido a que son datos sensibles entonces se colocan
+            en el cuerpo y mediante POST no se envían en la red.
+          </p>
+        </li>
+        <br>
+        <li>
+          ¿Qué método HTTP se utiliza cuando a través de un navegador web se
+          accede a una página a través de un URL?
+          <p>
+            Se utiliza GET ya que se está solicitando información de un recurso.
+          </p>
+        </li>      
+        <br>
+        <li>
+          Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué
+          significa esto? ¿Ocurrió algún error?
+          <p>
+            El código 200 significa que la solicitud se ha realizado correctamente.
+          </p>
+        </li>
+        <br>
+        <li>
+          ¿Es responsabilidad del desarrollador corregir un sitio web si un
+          usuario reporta que intentó acceder al sitio y se encontró con un error
+          404? ¿Por qué?
+          <p>
+            No, ya que el desarrollador no controla que URL fue ingresada por el 
+            usuario entonces no es su responsabilidad.
+          </p>
+        </li>
+        <br>
+        <li>
+          ¿Es responsabilidad del desarrollador corregir un sitio web si un
+          usuario reporta que intentó acceder al sitio y se encontró con un error
+          500? ¿Por qué?
+          <p>
+            Sí, porque el desarrollador controla el código de la página web.
+          </p>
+        </li>
+        <br>
+        <li>
+          ¿Qué significa que un atributo HTML5 esté depreciado o desaprobado
+          (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén
+          desaprobados.
+          <p>
+            Significa que el atributo ya no se utiliza pero hay varios que con 
+            los que los puedes sustituir. Algunos elementos de HTML 4 que en HTML5
+            estén desaprobados son: applet, acronym, bgsound, dir, hgroup, isindex,
+            basefont, big, center, font, menu, etc (Estas Son Las Etiquetas 
+            Obsoletas En HTML5: ¡Actualízate! | Tokio, 2022).
+          </p>
+        </li>
+        <br>
+        <li>
+          ¿Cuáles son las diferencias principales entre HTML 4 y HTML5?
+          <p>
+            Soporte para video, audio, canvas, svg geolocalización, 
+            web storage
+          </p>
+        </li>
+        <br>
+        <li>
+          ¿Qué componentes de estructura y estilo tiene una tabla?
+          <p>
+            Una tabla registros (filas) y campos (columnas).
+          </p>
+        </li>
+        <br>
+        <li>
+          ¿Cuáles son los principales controles de una forma HTML5?
+          <p>
+            Los principales controles en HTML5 son: input, select, 
+            textarea, button, checkbox, radio, file, password, submit, 
+            reset, etc. (Controles De Formulario Originales - Aprende 
+            Desarrollo Web | MDN, n.d.)
+          </p>
+        </li>
+        <br>
+        <li>
+          ¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes
+          utilizar la siguiente página para descubrirlo: http://html5test.com/ (Al
+          responder la pregunta recuerda poner el navegador que utilizas)
+          <p>
+            El navegador que utilizo es Google Chrome y tiene un 99% de soporte a 
+            HTML 5.
+          </p>
+        </li>
+  
+        <h4>
+          Sobre el ciclo de vida y desarrollo de los sistemas de información:
+        </h4>
+        <li>
+          ¿Cuál es el ciclo de vida de los sistemas de información? ¿Cuál es el
+          ciclo de desarrollo de sistemas de información?
+          <p>
+            El ciclo de vida de los sistemas de información es el conjunto de fases
+            que un sistema de información atraviesa desde su concepción hasta su
+            desmantelamiento. <br>
+            Mientras que el ciclo de desarrollo es más acerca desde que se le plantea
+            un problema hasta que se le implementa la solución.
+          </p>
+        </li>
+      </article>
 
-      <li>
-        ¿Cuál es la diferencia entre Internet y la World Wide Web?
-        <p>
-          El Internet son todas las computadoras y la conexión que tienen, 
-          mientras que la WWW es la red de información que se puede acceder
-          a través de Internet (Redacción, 2019).</p>
-        </p>
-      </li>
-      <br>
-      <li>
-        ¿Cuáles son las partes de un URL?
-        <img src="url.png" width="1000px">
-        <p style="text-align: center;">(Collado, 2025)</p>
-        <ol type="1">
-          <li>Protocolo.</li>
-          <li>Subdominio.</li>
-          <li>Dominio.</li>
-          <li>TLD.</li>
-          <li>Carpeta o subcarpeta.</li>
-          <li>Página.</li>
-          <li>Etiqueta.</li>
-        </ol>
-      </li>
-      <br>
-      <li>
-        ¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH,
-        DELETE?
-        <ol>
-          <li>GET: Es utilizado para obtener información de un recurso.</li>
-          <li>HEAD: Es utilizado para obtener información de un recurso sin
-              obtener el cuerpo del recurso.</li>
-          <li>POST: Es utilizado para enviar un nuevo recurso, causando un 
-              cambio de estado.</li>
-          <li>PUT: Es utilizado para actualizar un recurso existente.</li>
-          <li>PATCH: Es utilizado para actualizar un recurso existente de manera
-              parcial.</li>
-          <li>DELETE: Es utilizado para eliminar un recurso existente.</li>
-        </ol> 
-      </li>
-      <br>
-      <li>
-        ¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por
-        ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por
-        qué?
-        <p>
-          Se usa POST debido a que son datos sensibles entonces se colocan
-          en el cuerpo y mediante POST no se envían en la red.
-        </p>
-      </li>
-      <br>
-      <li>
-        ¿Qué método HTTP se utiliza cuando a través de un navegador web se
-        accede a una página a través de un URL?
-        <p>
-          Se utiliza GET ya que se está solicitando información de un recurso.
-        </p>
-      </li>      
-      <br>
-      <li>
-        Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué
-        significa esto? ¿Ocurrió algún error?
-        <p>
-          El código 200 significa que la solicitud se ha realizado correctamente.
-        </p>
-      </li>
-      <br>
-      <li>
-        ¿Es responsabilidad del desarrollador corregir un sitio web si un
-        usuario reporta que intentó acceder al sitio y se encontró con un error
-        404? ¿Por qué?
-        <p>
-          No, ya que el desarrollador no controla que URL fue ingresada por el 
-          usuario entonces no es su responsabilidad.
-        </p>
-      </li>
-      <br>
-      <li>
-        ¿Es responsabilidad del desarrollador corregir un sitio web si un
-        usuario reporta que intentó acceder al sitio y se encontró con un error
-        500? ¿Por qué?
-        <p>
-          Sí, porque el desarrollador controla el código de la página web.
-        </p>
-      </li>
-      <br>
-      <li>
-        ¿Qué significa que un atributo HTML5 esté depreciado o desaprobado
-        (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén
-        desaprobados.
-        <p>
-          Significa que el atributo ya no se utiliza pero hay varios que con 
-          los que los puedes sustituir. Algunos elementos de HTML 4 que en HTML5
-          estén desaprobados son: applet, acronym, bgsound, dir, hgroup, isindex,
-          basefont, big, center, font, menu, etc (Estas Son Las Etiquetas 
-          Obsoletas En HTML5: ¡Actualízate! | Tokio, 2022).
-        </p>
-      </li>
-      <br>
-      <li>
-        ¿Cuáles son las diferencias principales entre HTML 4 y HTML5?
-        <p>
-          Soporte para video, audio, canvas, svg geolocalización, 
-          web storage
-        </p>
-      </li>
-      <br>
-      <li>
-        ¿Qué componentes de estructura y estilo tiene una tabla?
-        <p>
-          Una tabla registros (filas) y campos (columnas).
-        </p>
-      </li>
-      <br>
-      <li>
-        ¿Cuáles son los principales controles de una forma HTML5?
-        <p>
-          Los principales controles en HTML5 son: input, select, 
-          textarea, button, checkbox, radio, file, password, submit, 
-          reset, etc. (Controles De Formulario Originales - Aprende 
-          Desarrollo Web | MDN, n.d.)
-        </p>
-      </li>
-      <br>
-      <li>
-        ¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes
-        utilizar la siguiente página para descubrirlo: http://html5test.com/ (Al
-        responder la pregunta recuerda poner el navegador que utilizas)
-        <p>
-          El navegador que utilizo es Google Chrome y tiene un 99% de soporte a 
-          HTML 5.
-        </p>
-      </li>
-
-      <h4>
-        Sobre el ciclo de vida y desarrollo de los sistemas de información:
-      </h4>
-      <li>
-        ¿Cuál es el ciclo de vida de los sistemas de información? ¿Cuál es el
-        ciclo de desarrollo de sistemas de información?
-        <p>
-          El ciclo de vida de los sistemas de información es el conjunto de fases
-          que un sistema de información atraviesa desde su concepción hasta su
-          desmantelamiento. <br>
-          Mientras que el ciclo de desarrollo es más acerca desde que se le plantea
-          un problema hasta que se le implementa la solución.
-        </p>
-      </li>
+      <article id="Lab3">
+        <h4>Lab 3</h4>
+        <li>
+          Como ingeniero de software ¿cuál es tu recomendación sobre el uso de 
+          !important en un CSS? 
+          <p>Es algo que no se recomienda usar debido a que es un último recurso 
+             y puede afectar la estructura de tu CSS.</p>
+          </p>
+        </li>
+        <br>
+        <li>
+          Si se pone una imagen de fondo en una página HTML, ¿por qué debe escogerse 
+          con cuidado?
+          <p>
+            Debido a que puede interferir con la facilidad para leer el texto así 
+            como los elementos en pantalla.
+          </p>
+        </li>
+        <br>
+        <li>
+          Como ingeniero de software, ¿cuál es tu recomendación al elegir las unidades 
+          de un propiedad de estilo entre %, px y pt?
+          <p>
+            Aunque varia de acuerdo a que elemento se esté tratando, en general se 
+            recomienda usar px ya que es la unidad más común y fácil de usar, sin 
+            conversiones.
+          </p>
+        </li>
+        <br>
+        <li>
+          ¿Por qué el uso de una versión minimizada del CSS mejora el rendimiento del sitio?
+          <p>
+            Debido a que los saltos de línea y espacios generan un mayor peso y tiempo de
+            carga en el envío de la página.
+          </p>
+        </li>
+      </article>
     </section>
 
     <section id="Referencias">
