@@ -77,7 +77,7 @@ let promedios_matriz = promedio(matriz);
 console.log(promedios_matriz);
 
 //Ejercicio 5
-/* function inverso(num) {
+function inverso(num) {
   let str = num.toString();
   let inv = [];
   for (let i = str.length - 1; i >= 0; i--) {
@@ -87,5 +87,26 @@ console.log(promedios_matriz);
   return inv;
 }
 let num = 230301;
-console.log(inverso(num)); */
+let numInv = inverso(num);
+console.log(numInv);
+
 //Ejercicio 6
+class Tarea {
+  constructor(titulo, descripcion, fecha, estatus) {
+    this.titulo = titulo;
+    this.descripcion = descripcion;
+    this.fecha = fecha;
+    this.estatus = estatus;
+  }
+
+  completar() {
+    this.estatus = "completada";
+  }
+
+  mostrarInfo() {
+    document.getElementById("resultado").innerText =
+      `Tarea: ${this.titulo} - ${this.descripcion} - Fecha: ${this.fecha} (${this.estatus === "completada" ? "✅ Completada" : "❌ En proceso"})`;
+  }
+}
+
+const tarea1 = new Tarea("Lab1", "Iniciar HTML", "2025-02-14", "En Proceso");
