@@ -105,7 +105,8 @@ class Tarea {
 
   mostrarInfo() {
     document.getElementById("resultado").innerText =
-      `Tarea: ${this.titulo} - ${this.descripcion} - Fecha: ${this.fecha} (${this.estatus === "completada" ? "✅ Completada" : "❌ En proceso"})`;
+      `Tarea: ${this.titulo} - ${this.descripcion} - Fecha: ${this.fecha} 
+      (${this.estatus === "completada" ? "✅ Completada" : "❌ En proceso"})`;
   }
 }
 
