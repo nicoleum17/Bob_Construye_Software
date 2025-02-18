@@ -8,12 +8,55 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
     />
+    <style>
+      .column {
+        text-align: center;
+      }
+    </style>
   </head>
-  <body>
-    <section class="section">
+  <body class="container is-fullhd">
+    <header class="section">
       <div class="container">
         <h1 class="title">Laboratorio 6</h1>
         <p class="subtitle">Programación orientada a eventos</p>
+      </div>
+    </header>
+
+    <section class="has-background-primary-10 10p">
+      <h1 class="title">Productos</h1>
+      <h2 class="subtitle">
+        A continuación se muestran los productos disponibles en la página.
+        <br /><strong>Agrega</strong> los que desees a tu carrito.
+      </h2>
+      <article class="columns">
+        <div class="column subtitle is-centered buttons are-small">
+          Bajo <br />
+          <img src="bajo.jpeg" />
+          <p id="p_bajo">$2911</p>
+          <button class="button-is-normal">Agregar al carrito</button>
+        </div>
+        <div class="column subtitle">
+          Piano <br />
+          <img src="piano.jpeg" />
+          <p id="p_piano">$14999</p>
+        </div>
+        <div class="column subtitle">
+          Guitarra <br />
+          <img src="guitarra.jpeg" />
+          <p id="p_guitarra">$3899</p>
+        </div>
+        <div class="column subtitle">
+          Batería<br />
+          <img src="bateria.jpeg" />
+          <p id="p_bateria">$5019</p>
+        </div>
+      </article>
+      <div class="buttons are-small">
+        <button class="button">Small</button>
+        <button class="button">Small</button>
+        <button class="button">Small</button>
+        <button class="button is-normal">Normal</button>
+        <button class="button">Small</button>
       </div>
     </section>
   </body>
