@@ -45,10 +45,10 @@ document
     let carrito = document.getElementById("carrito");
     let boton = document.getElementById("button-ver-carrito");
 
-    // Alternar la visibilidad del carrito
+    //Cambiamos a que se vea el carrito
     carrito.classList.toggle("is-hidden");
 
-    // Cambiar el texto del botón
+    //Cambiamos el texto
     boton.textContent = carrito.classList.contains("is-hidden")
       ? "Ver Carrito"
       : "Ocultar Carrito";
