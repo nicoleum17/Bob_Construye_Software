@@ -6,6 +6,7 @@ let iva = 0;
 const totalCarrito = document.getElementById("total-carrito");
 const listaCarrito = document.getElementById("elemento-carrito");
 const ivaCarrito = document.getElementById("iva-carrito");
+const boton = document.getElementById("boton-ver-carrito");
 
 botones.forEach((boton) => {
   boton.addEventListener("click", () => {
@@ -37,3 +38,18 @@ botones.forEach((boton) => {
     listaCarrito.appendChild(nuevoElemento);
   });
 });
+
+document
+  .getElementById("button-ver-carrito")
+  .addEventListener("click", function () {
+    let carrito = document.getElementById("carrito");
+    let boton = document.getElementById("button-ver-carrito");
+
+    // Alternar la visibilidad del carrito
+    carrito.classList.toggle("is-hidden");
+
+    // Cambiar el texto del botón
+    boton.textContent = carrito.classList.contains("is-hidden")
+      ? "Ver Carrito"
+      : "Ocultar Carrito";
+  });
