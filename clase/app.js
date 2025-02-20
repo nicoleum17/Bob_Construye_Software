@@ -15,6 +15,8 @@ for (let item of arreglo) {
   }, item);
 }
 
+// file_system.readFileSync("index.html");
+
 // Programar servidor remoto
 const http = require("http");
 
