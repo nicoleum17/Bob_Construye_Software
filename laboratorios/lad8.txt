@@ -1,0 +1,4 @@
+Laboratorio 8 - Pair programming 
+1.- https://github.com/Jh700wolf/SlaytheCode/commit/ecffcc18f4ec90c75faeff5d63f4f3c5a5a980e0
+2.- https://github.com/Jh700wolf/SlaytheCode/commit/c7b1ec817b3a985a8ef691048f5b352e5578ff1b
+3.- https://github.com/Jh700wolf/SlaytheCode/commit/8dc8ac316a02b8dc1cecbd648f398143fe080f6f

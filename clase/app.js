@@ -15,7 +15,7 @@ for (let item of arreglo) {
   }, item);
 }
 
-// file_system.readFileSync("index.html");
+//
 
 // Programar servidor remoto
 const http = require("http");
@@ -24,6 +24,7 @@ const server = http.createServer((request, response) => {
   console.log(request.url);
   response.setHeader("Content-Type", "text/html");
   response.write("<h1>Hola mundo!</h1>");
+  //file_system.readFileSync("index.html");
   response.end();
 }); //localhost:3000
 
