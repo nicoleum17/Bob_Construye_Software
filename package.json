@@ -4,6 +4,7 @@
   "description": "Laboratorio de TC2005B feb-jun 2025",
   "main": "app.js",
   "scripts": {
+    "start": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/nicoleum17/Bob_Construye_Software/issues"
   },
-  "homepage": "https://github.com/nicoleum17/Bob_Construye_Software#readme"
+  "homepage": "https://github.com/nicoleum17/Bob_Construye_Software#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }
