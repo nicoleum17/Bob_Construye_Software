@@ -1,0 +1,22 @@
+{
+  "name": "bob_construye_software",
+  "version": "1.0.0",
+  "description": "Laboratorio de TC2005B feb-jun 2025",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicoleum17/Bob_Construye_Software.git"
+  },
+  "keywords": [
+    "TC2005B"
+  ],
+  "author": "Nicole Uriostegui",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nicoleum17/Bob_Construye_Software/issues"
+  },
+  "homepage": "https://github.com/nicoleum17/Bob_Construye_Software#readme"
+}
