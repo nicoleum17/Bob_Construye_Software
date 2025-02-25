@@ -20,6 +20,9 @@
     "url": "https://github.com/nicoleum17/Bob_Construye_Software/issues"
   },
   "homepage": "https://github.com/nicoleum17/Bob_Construye_Software#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
   "dependencies": {
     "express": "^4.21.2"
   }
