@@ -1,6 +1,10 @@
 const express = require("express");
 const app = express();
 
+const bodyParser = require("body-parser");
+
+app.use(bodyParser.urlencoded({ extended: false }));
+
 //Middleware
 app.use((request, response, next) => {
   console.log("Middleware!");
@@ -11,11 +15,12 @@ app.use((request, response, next) => {
 // De lo especifico a lo general
 // app.get para solo peticiones de tipo GET
 app.get("/plantas/agregar", (request, response, next) => {
-  response.send(html_header, html_form, html_footer);
+  response.send("Página HTML");
 });
 
 app.post("/plantas/agregar", (request, response, next) => {
-  response.send(html_header, html_form, html_footer);
+  console.log(request.body);
+  response.send("Página HTML");
 });
 
 app.use((request, response, next) => {
