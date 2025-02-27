@@ -2,7 +2,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
 
-app.use(express.static("public"));
+const path = require("path");
+app.use(express.static(path.join(__dirname, "public")));
 
 // Middleware para procesar JSON y formularios
 app.use(express.json());
