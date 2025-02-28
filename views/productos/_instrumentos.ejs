@@ -1,0 +1,77 @@
+<section class="has-background-primary-10 10p">
+  <h1 class="title">Productos</h1>
+  <h2 class="subtitle">
+    A continuación se muestran los productos disponibles en la página.
+    <br /><strong>Agrega</strong> los que desees a tu carrito.
+  </h2>
+  <article class="columns">
+    <div class="column subtitle">
+      Bajo <br />
+      <img src="/img/bajo.jpeg" />
+      <p>$2911</p>
+      <input type="number" class="cantidad" />
+      <button
+        class="button is-primary add-to-cart"
+        data-precio="2911"
+        instrumento="Bajo"
+      >
+        Agregar al carrito
+      </button>
+    </div>
+
+    <div class="column subtitle">
+      Piano <br />
+      <img src="/img/piano.jpeg" />
+      <p>$14999</p>
+      <input type="number" class="cantidad" />
+      <button
+        class="button is-primary add-to-cart"
+        data-precio="14999"
+        instrumento="Piano"
+      >
+        Agregar al carrito
+      </button>
+    </div>
+
+    <div class="column subtitle">
+      Guitarra <br />
+      <img src="/img/guitarra.jpeg" />
+      <p>$3899</p>
+      <input type="number" class="cantidad" />
+      <button
+        class="button is-primary add-to-cart"
+        data-precio="3899"
+        instrumento="Guitarra"
+      >
+        Agregar al carrito
+      </button>
+    </div>
+
+    <div class="column subtitle">
+      Batería<br />
+      <img src="/img/bateria.jpeg" />
+      <p>$5019</p>
+      <input type="number" class="cantidad" />
+      <button
+        class="button is-primary add-to-cart"
+        data-precio="5019"
+        instrumento="Bateria"
+      >
+        Agregar al carrito
+      </button>
+    </div>
+  </article>
+</section>
+<br /><br />
+
+<button id="button-ver-carrito" class="button is-info">Ver Carrito</button>
+
+<br /><br />
+
+<section id="carrito" class="is-hidden">
+  <h2 class="title">Carrito:</h2>
+  <div id="elemento-carrito"></div>
+  <div>iva: $<span id="iva-carrito">0</span></div>
+  <h3 class="subtitle">Total: $<span id="total-carrito">0</span></h3>
+  <script src="/js/script.js"></script>
+</section>

@@ -5,11 +5,11 @@ const router = express.Router();
 
 //Enviar la página de productos (GET)
 router.get("/", (request, response) => {
-  response.sendFile(path.join(__dirname, "..", "views", "productos.html"));
+  response.render("agregar_productos");
 });
 
 router.post("/", (request, response) => {
-  response.sendFile(path.join(__dirname, "..", "views", "carrito.html"));
+  response.render("agregar_carrito");
 });
 
 module.exports = router;
