@@ -1,38 +1,21 @@
 const express = require("express");
-
 const router = express.Router();
 
-const plantas = [];
+//agregar la ruta del controlador al archivo de route
+const plantas_controller = require("../controllers/plantas.controller");
 
 // El orden de los middleware importa
 // De lo especifico a lo general
 // app.get para solo peticiones de tipo GET
 
 //router.get es para registrar un middleware para peticiones HTTP GET
-router.get("/agregar", (request, response, next) => {
-  response.render("agregar_planta");
-});
+//                    , funcion que está en el controlador
+router.get("/agregar", plantas_controller.get_agregar);
+router.get("/add", plantas_controller.get_agregar);
 
 //router.post es para registrar un middleware para peticiones HTTP POST
-router.post("/agregar", (request, response, next) => {
-  console.log(request.body);
-  plantas.push(request.body.nombre);
-  let html = html_header;
-  html += `<div class="columns">`;
-  for (let planta of plantas) {
-    html += `<div class="column">`;
-    html += `<div class="card">
-        <div class="card-content">
-          <div class="content">`;
-    html += planta;
-    html += `</div>
-                </div>
-              </div>
-            </div>`;
-  }
-  html += `</div>`;
-  html += html_footer;
-  response.send(html);
-});
+router.post("/agregar", plantas_controller.post_agregar);
+
+router.get("/", plantas_controller.get_root);
 
 module.exports = router;
