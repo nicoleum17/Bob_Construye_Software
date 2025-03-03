@@ -1,5 +1,6 @@
 const plantas = [];
 
+//control de datos
 module.exports = class Planta {
   //Constructor de la clase. Sirve para crear un nuevo objeto, y en él se definen las propiedades del modelo
   constructor(mi_nombre) {
@@ -8,7 +9,8 @@ module.exports = class Planta {
 
   //Este método servirá para guardar de manera persistente el nuevo objeto.
   save() {
-    plantas.push(this.nombre);
+    // sin this para guardar el objeto completo
+    plantas.push(this);
   }
 
   //Este método servirá para devolver los objetos del almacenamiento persistente.
