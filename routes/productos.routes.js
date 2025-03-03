@@ -3,13 +3,11 @@ const path = require("path");
 
 const router = express.Router();
 
-//Enviar la página de productos (GET)
-router.get("/", (request, response) => {
-  response.render("agregar_productos");
-});
+const productos_controller = require("../controllers/productos.controller");
 
-router.post("/", (request, response) => {
-  response.render("agregar_carrito");
-});
+//Enviar la página de productos (GET)
+router.get("/", productos_controller.get_producto);
+
+router.post("/", productos_controller.post_producto);
 
 module.exports = router;
