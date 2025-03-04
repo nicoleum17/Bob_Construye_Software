@@ -33,6 +33,7 @@ app.use((request, response, next) => {
 });
 
 const usersRoutes = require("./routes/users.routes");
+app.use("/users", usersRoutes);
 
 const plantasRoutes = require("./routes/plantas.routes");
 

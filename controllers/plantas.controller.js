@@ -1,6 +1,7 @@
 const Planta = require("../models/planta.model");
 
 exports.get_agregar = (request, response, next) => {
+  console.log(request.session.username);
   response.render("agregar_planta");
 };
 
