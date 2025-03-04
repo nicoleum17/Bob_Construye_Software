@@ -73,7 +73,10 @@
           <div class="navbar-item">
             <div class="buttons">
               <% if(isLoggedIn) { %>
-
+                <%= username %>
+                <a class="button is-primary">
+                  <strong>Log out</strong>
+                </a>
               <%} else { %>
                 <a class="button is-primary">
                   <strong>Sign up</strong>
