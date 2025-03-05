@@ -32,6 +32,9 @@ app.use((request, response, next) => {
   next();
 });
 
+const usuariosRoutes = require("./routes/users_productos.routes");
+app.use("/usuarios", usuariosRoutes);
+
 const usersRoutes = require("./routes/users.routes");
 app.use("/users", usersRoutes);
 
