@@ -1,3 +1,5 @@
+const db = require("../util/database");
+
 const plantas = [];
 
 //control de datos
@@ -9,8 +11,16 @@ module.exports = class Planta {
 
   //Este método servirá para guardar de manera persistente el nuevo objeto.
   save() {
-    // sin this para guardar el objeto completo
-    plantas.push(this);
+    //promesa
+    db.execute("INSERT INTO plantas(nombre) VALUE (?)", [this.nombre])
+      //then: funcion que se ejecuta si la promesa se cumple
+      .then(() => {
+        console.log("planta guardada");
+      })
+      //catch: si no se cumple
+      .catch((error) => {
+        console.log(error);
+      });
   }
 
   //Este método servirá para devolver los objetos del almacenamiento persistente.
