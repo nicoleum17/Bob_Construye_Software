@@ -12,15 +12,7 @@ module.exports = class Planta {
   //Este método servirá para guardar de manera persistente el nuevo objeto.
   save() {
     //promesa
-    db.execute("INSERT INTO plantas(nombre) VALUE (?)", [this.nombre])
-      //then: funcion que se ejecuta si la promesa se cumple
-      .then(() => {
-        console.log("planta guardada");
-      })
-      //catch: si no se cumple
-      .catch((error) => {
-        console.log(error);
-      });
+    return db.execute("INSERT INTO plantas(nombre) VALUE (?)", [this.nombre]);
   }
 
   //Este método servirá para devolver los objetos del almacenamiento persistente.

@@ -11,7 +11,16 @@ exports.get_agregar = (request, response, next) => {
 exports.post_agregar = (request, response, next) => {
   console.log(request.body);
   const mi_planta = new Planta(request.body.nombre);
-  mi_planta.save();
+  mi_planta
+    .save()
+    //then: funcion que se ejecuta si la promesa se cumple
+    .then(() => {
+      console.log("planta guardada");
+    })
+    //catch: si no se cumple
+    .catch((error) => {
+      console.log(error);
+    });
 
   response.redirect("/plantas/");
 };
