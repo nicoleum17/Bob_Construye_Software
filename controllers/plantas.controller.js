@@ -31,10 +31,19 @@ exports.get_root = (request, response, next) => {
   if (request.session.info) {
     request.session.info = " ";
   }
-  response.render("lista_plantas", {
-    isLoggedIn: request.session.isLoggedIn || false,
-    username: request.session.username || " ",
-    plantas: Planta.fetchAll(),
-    info: mensaje,
-  });
+
+  Planta.fetchAll()
+    .then(([rows, fieldData]) => {
+      console.log(fieldData);
+      console.log(rows);
+      response.render("lista_plantas", {
+        isLoggedIn: request.session.isLoggedIn || false,
+        username: request.session.username || "",
+        plantas: rows,
+        info: mensaje,
+      });
+    })
+    .catch((error) => {
+      console.log(error);
+    });
 };
