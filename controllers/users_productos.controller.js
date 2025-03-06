@@ -8,12 +8,18 @@ exports.get_login = (request, response, next) => {
 exports.post_login = (request, response, next) => {
   request.session.estaloggeado = true;
   request.session.username = request.body.username;
-  response.redirect("/productos/carrito");
+  response.redirect("/productos/carrito", {
+    estaloggeado: request.session.estaloggeado || false,
+    username: request.session.username || "",
+  });
 };
 
 exports.get_logout = (request, response, next) => {
   request.session.destroy(() => {
     //Este código se ejecuta cuando la sesión se elimina.
-    response.redirect("/usuarios/login");
+    response.redirect("/usuarios/login", {
+      estaloggeado: request.session.estaloggeado || false,
+      username: request.session.username || "",
+    });
   });
 };
