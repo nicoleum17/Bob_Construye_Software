@@ -1,6 +1,5 @@
 const db = require("../util/database");
 
-//control de datos
 module.exports = class Planta {
   //Constructor de la clase. Sirve para crear un nuevo objeto, y en él se definen las propiedades del modelo
   constructor(mi_nombre) {
@@ -9,12 +8,23 @@ module.exports = class Planta {
 
   //Este método servirá para guardar de manera persistente el nuevo objeto.
   save() {
-    //promesa
-    return db.execute("INSERT INTO plantas(nombre) VALUE (?)", [this.nombre]);
+    return db.execute("INSERT INTO plantas(nombre) VALUES (?)", [this.nombre]);
   }
 
   //Este método servirá para devolver los objetos del almacenamiento persistente.
   static fetchAll() {
-    return plantas;
+    return db.execute("SELECT * FROM plantas");
+  }
+
+  static fetchOne(id) {
+    return db.execute("SELECT * FROM plantas WHERE id = ?", [id]);
+  }
+
+  static fetch(id) {
+    if (id) {
+      return this.fetchOne(id);
+    } else {
+      return this.fetchAll();
+    }
   }
 };
