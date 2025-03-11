@@ -1,5 +1,15 @@
 <%- include('productos/_header')%> <%- include('productos/_instrumentos')%>
-<section class="has-background-primary-10 10p">
-  <h1>Se han agregado los productos al carrito</h1>
-</section>
+<div class="columns">
+  <% for(let producto of productos) { %>
+      <div class="column">
+          <div class="card">
+              <div class="card-content">
+                  <div class="content">
+                      <%= producto.nombre %> 
+                  </div>
+              </div>
+          </div>
+      </div>
+  <% } %>
+  </div>
 <%- include('productos/_footer')%>
