@@ -14,8 +14,8 @@ exports.post_producto = (request, response, next) => {
   mi_producto
     .save()
     .then(() => {
+      response.redirect("/productos");
       request.session.info = `El producto ${mi_producto.nombre} se ha creado con cantidad ${mi_producto.cantidad}`;
-      response.redirect("/agregar-carrito");
     })
     .catch((error) => {
       console.log(error);
