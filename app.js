@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
+const csrf = require("csurf");
 
 const path = require("path");
 app.use(express.static(path.join(__dirname, "public")));
@@ -15,6 +16,9 @@ app.use(
     saveUninitialized: false, //Asegura que no se guarde una sesión para una petición que no lo necesita
   })
 );
+
+const csrfProtection = csrf();
+app.use(csrfProtection);
 
 // Para usar el motor de template engine EJS
 app.set("view engine", "ejs");
