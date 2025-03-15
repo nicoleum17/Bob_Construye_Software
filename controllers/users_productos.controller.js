@@ -59,12 +59,12 @@ exports.post_login = (req, res) => {
             return req.session.save(() => res.redirect("/dashboard"));
           } else {
             req.session.warning = "Usuario y/o contraseña incorrectos";
-            res.redirect("/auth/login");
+            res.redirect("/usuarios/login");
           }
         });
       } else {
         req.session.warning = "Usuario y/o contraseña incorrectos";
-        res.redirect("/auth/login");
+        res.redirect("/usuarios/login");
       }
     })
     .catch((err) => console.log(err));
@@ -72,7 +72,7 @@ exports.post_login = (req, res) => {
 
 exports.get_logout = (req, res) => {
   req.session.destroy(() => {
-    res.redirect("/auth/login");
+    res.redirect("/usuarios/login");
   });
 };
 

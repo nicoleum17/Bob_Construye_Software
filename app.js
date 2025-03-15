@@ -17,9 +17,6 @@ app.use(
   })
 );
 
-const csrfProtection = csrf();
-app.use(csrfProtection);
-
 // Para usar el motor de template engine EJS
 app.set("view engine", "ejs");
 app.set("views", "views");
@@ -27,6 +24,14 @@ app.set("views", "views");
 // Middleware para procesar JSON y formularios
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+
+const csrfProtection = csrf();
+app.use(csrfProtection);
+
+app.use((req, res, next) => {
+  res.locals.csrfToken = req.csrfToken();
+  next();
+});
 
 //Middleware
 app.use((request, response, next) => {
